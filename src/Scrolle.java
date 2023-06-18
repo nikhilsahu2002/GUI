@@ -1,10 +1,12 @@
 import java.awt.*;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
+import javax.swing.JToolBar;
 
 public class Scrolle {
     public static void main(String[] args) {
@@ -35,20 +37,31 @@ public class Scrolle {
         // JSplitPane jSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,panel,panel2);
         // frame.add(jSplitPane);
 
-        JPanel j1 = new JPanel();
-        JPanel j2 = new JPanel();
-        JPanel j3 = new JPanel();
+        // JPanel j1 = new JPanel();
+        // JPanel j2 = new JPanel();
+        // JPanel j3 = new JPanel();
 
-        j1.setBackground(Color.BLACK);
-        j2.setBackground(Color.ORANGE);
-        j3.setBackground(Color.PINK);
+        // j1.setBackground(Color.BLACK);
+        // j2.setBackground(Color.ORANGE);
+        // j3.setBackground(Color.PINK);
 
-        JTabbedPane tabbedPane  = new JTabbedPane();
-        tabbedPane.setBounds(50, 50, 200, 200);
-        tabbedPane.add("main",j1);
-        tabbedPane.add("Sales",j2);
-        tabbedPane.add("Contact Us",j3);
+        // JTabbedPane tabbedPane  = new JTabbedPane();
+        // tabbedPane.setBounds(50, 50, 200, 200);
+        // tabbedPane.add("main",j1);
+        // tabbedPane.add("Sales",j2);
+        // tabbedPane.add("Contact Us",j3);
 
-        frame.add(tabbedPane);
+        // frame.add(tabbedPane);
+
+        JToolBar jToolBar = new JToolBar();
+        jToolBar.setRollover(true);
+        
+        JButton jButton = new JButton("File");
+        jToolBar.add(jButton);
+        jToolBar.addSeparator();
+
+        jToolBar.setBounds(0, 00, 50,50);
+
+        frame.add(jToolBar);
     }
 }
